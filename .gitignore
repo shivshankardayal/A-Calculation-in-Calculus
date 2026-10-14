@@ -1,0 +1,13 @@
+*.tuc
+*.pgf
+*.log
+*.tua
+/info
+cc-cc.pdf
+cc.pdf
+cc1.pdf
+cc_final.pdf
+#*
+.#*
+*.aux
+.vscode/
