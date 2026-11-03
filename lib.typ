@@ -303,6 +303,17 @@
     }
 }
 
+#let proof(body) = [
+  #block(width: 100%)[
+    *Proof.* #body #h(1fr) $square$
+  ]
+]
+#let aliter(body) = [
+  #block(width: 100%)[
+    *Aliter.* #body #h(1fr) $square$
+  ]
+]
+
 #let book(title: "", subtitle: "", date: "", author: (), paper-size: "iso-b5", logo: none, cover: none, image-index:none, body, main-color: blue, copyright: [], dedication: [], lang: "en", list-of-figure-title: none, list-of-table-title: none, supplement-chapter: "Chapter", supplement-part: "Part", font-size: 9pt, part-style: 0, lowercase-references: false) = {
     set document(author: author, title: title)
     set text(size: font-size, lang: lang)

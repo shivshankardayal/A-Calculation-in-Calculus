@@ -9,7 +9,7 @@ doing so. Please create a PR or send me text of the problem and I will add it.
 
 ## Download Link
 
-You can download it from https://ashtavakra.org
+You can download it from https://ashtavakra.org when complete.
 
 ## LICENSE
 All the files in this repository are licensed under GNU FDL 1.3 or later. The `TeX` sources are

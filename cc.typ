@@ -2,8 +2,8 @@
 #import "@preview/ctz-euclide:0.1.0": *
 #import "lib.typ": *
 
-//#set text(font: "STIX Two Text")
-//#show math.equation: set text(font: "STIX Two Math")
+//#set text(font: "XCharter")
+//#show math.equation: set text(font: "XCharter Math")
 //#show raw: set text(font: " Mono")
 #let mycolor = rgb(0, 96, 176);
 
@@ -62,7 +62,7 @@
 )
 #let det(content) = math.mat(
     content,
-    delim: "|", // The desired delimiter
+    delim: "|",
 )
 
 // Custom thmbox
@@ -85,8 +85,12 @@
 
 #part("Single Variable Calculus")
 
+#include "numbers.typ"
+
 #part("Answers")
 #counter(heading).update(0)
+
+#include "numbers-solutions.typ"
 
 #part("License")
 #show: appendices.with("Appendices", hide-parent: false)
