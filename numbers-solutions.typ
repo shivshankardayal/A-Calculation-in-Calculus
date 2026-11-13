@@ -1265,3 +1265,896 @@
   Both sides are equal.
 
   In all possible cases, the relationship holds true.
+//82
++ We are given that $x != 0$, which means $x$ must be either strictly positive ($x > 0$) or strictly
+  negative ($x < 0$). We can evaluate the proof by analyzing these two cases:
+
+  *Case 1:* Suppose $x > 0$. If $x$ is strictly positive, its absolute value is equal to itself, so $|x| =
+  x$. The reciprocal of a strictly positive number is also strictly positive, which means $1 / x >
+  0$. Therefore, the absolute value of the reciprocal is equal to itself $lr(|1 / x|) = 1 / x$
+
+  Substituting $|x| = x$ into the right side of our target equation yields $1 /(|x|) = 1 / x$
+
+  Since both sides equal $1 / x$, the statement holds true for $x > 0$.
+
+  *Case 2:* Suppose $x < 0$. If $x$ is strictly negative, its absolute value is equal to its negation, so
+  $|x| = -x$. The reciprocal of a strictly negative number is also strictly negative, which means $1 / x <
+  0$. By the definition of absolute value, the absolute value of a negative number is its negation $lr(|1 /
+  x|) = -(1 / x) = -1 / x$
+
+  Now let us evaluate the right side of our target equation by substituting $|x| = -x$: $1 / (|x|) = 1 / (-x)
+  = -1 / x$
+
+  Since both sides equal $-1 / x$, the statement holds true for $x < 0$.
+
+  In both possible cases, the equality holds true.
+//83
++ We are given that $y != 0$. We can rewrite the fraction $x / y$ as a product of $x$ and the reciprocal of
+  $y$: $x / y = x dot (1 / y)$
+
+  Substituting this product into the right side of our target equation yields $lr(|x / y|) = lr(|x dot (1 / y)|)$
+
+  Using the multiplicative property of absolute values, which states that $|A dot B| = |A| dot |B|$ for all
+  real numbers $A$ and $B$, we can separate the factors inside the modulus:  $lr(|x dot (1 / y)|) = |x| dot
+  lr(|1 / y|)$
+
+  Next, we can apply the reciprocal property of absolute values, which states that if $y != 0$, then $lr(|1
+  / y|) = 1 /(|y|)$. Substituting this into our expression gives $|x| dot lr(|1 / y|) = |x| dot 1 /(|y|)$
+
+  Multiplying the terms together yields the final expression $|x| dot 1 /(|y|) = (|x|)/(|y|)$
+
+  By standard algebraic substitution, we have linked the right side of our theorem directly to the left side
+  $lr(|x / y|) = (|x|)/(|y|)$.
+//84
++ We can write the difference $x - y$ as a sum by introducing the additive inverse of $y$: $x - y = x +
+  (-y)$
+
+  Applying the standard triangle inequality, which states that $|A + B| <= |A| + |B|$ for any real numbers
+  $A$ and $B$, we set $A = x$ and $B = -y$: $|x + (-y)| <= |x| + |-y|$
+
+  Substituting $x - y$ back into the left side gives $|x - y| <= |x| + |-y|$
+
+  By the definition of absolute value, the absolute value of a number is equal to the absolute value of its
+  additive inverse, meaning $|-y| = |y|$ for all real numbers $y$. Replacing $|-y|$ with $|y|$ in the
+  inequality yields $|x - y| <= |x| + |y|$.
+//85
++ We can express the variable $x$ by adding and subtracting $y$ inside an algebraic expression $x = x - y + y$
+
+  Now, we group the terms as a sum of two quantities, $(x - y)$ and $y$, and apply the absolute value
+  function to both sides $|x| = |(x - y) + y|$
+
+  According to the triangle inequality, the absolute value of the sum of two real numbers is always less
+  than or equal to the sum of their individual absolute values ($|A + B| <= |A| + |B|$). Setting $A = x - y$
+  and $B = y$, we obtain $|(x - y) + y| <= |x - y| + |y|$
+
+  By substituting our initial identity back into the left side of the inequality, we get $|x| <= |x - y| +
+  |y|$
+
+  To isolate the target terms, we subtract $|y|$ from both sides of the inequality $|x| - |y| <= |x - y|$.
+//86
++ For all real numbers $x$ and $y$, $||x| - |y|| = -|x - y|$
+
+  Which can be rewritten as $-|x - y| <= |x| - |y|$
+
+  This provides the lower bound for our inequality chain.
+
+  Combining the lower bound from Step 2 and the upper bound from Step 1 gives the continuous compound
+  inequality $-|x - y| <= |x| - |y| <= |x - y|$
+
+  By the properties of absolute value inequalities, any relationship of the form $-c <= u <= c$ is logically
+  equivalent to $|u| <= c$. Setting $u = |x| - |y|$ and $c = |x - y|$, we obtain: $||x| - |y|| <= |x - y|$.
+//87
++ We can write the sum of three terms $x + y + z$ as a sum of two quantities by grouping the first two terms
+  together $x + y + z = (x + y) + z$
+
+  Applying the standard triangle inequality for two variables, which states that $|A + B| <= |A| + |B|$ for
+  any real numbers $A$ and $B$, we set $A = x + y$ and $B = z$: $|(x + y) + z| <= |x + y| + |z|$
+
+  Next, we apply the triangle inequality once more to the first term on the right side, $|x + y|$: $|x + y|
+  <= |x| + |y|$
+
+  Adding $|z|$ to both sides of this second inequality yields $|x + y| + |z| <= |x| + |y| + |z|$
+
+  By the transitive property of inequalities, combining our two inequality relationships gives $|x + y + z|
+  <= |x| + |y| + |z|$
+
+  Equality holds, meaning $|x + y + z| = |x| + |y| + |z|$, if and only if $x$, $y$, and $z$ all have the
+  same sign (they are all non-negative or all non-positive). More formally, equality holds if and only if $x
+  y >= 0$, $y z >= 0$, and $z x >= 0$.
+
+  For a two-variable triangle inequality $|A + B| = |A| + |B|$ to hold, the product of the two numbers must
+  be non-negative ($A B >= 0$), meaning they share the same sign direction or at least one is zero.
+
+  From our step-by-step application of the triangle inequality above, full equality requires both
+  intermediate steps to hold as strict equalities:
+
+  1. For the first step $|(x + y) + z| = |x + y| + |z|$ to hold, the product of the two grouped terms must
+     be non-negative $(x + y) z >= 0 => x z + y z >= 0$
+
+  2. For the second step $|x + y| = |x| + |y|$ to hold, the product of $x$ and $y$ must be non-negative $x y
+     >= 0$
+
+  Let us analyze these combined conditions:
+  - If $x$, $y$, and $z$ are all non-negative ($x >= 0, y >= 0, z >= 0$), then $x y >= 0$, $x z >= 0$, and
+    $y z >= 0$, which satisfies both conditions. The expression becomes $(x + y + z) = x + y + z$, which is an
+    equality.
+  - If $x$, $y$, and $z$ are all non-positive ($x <= 0, y <= 0, z <= 0$), then $x y >= 0$, $x z >= 0$, and
+    $y z >= 0$, which again satisfies both conditions. The expression becomes $|x + y + z| = -(x + y + z) =
+    (-x) + (-y) + (-z) = |x| + |y| + |z|$, which is an equality.
+
+  If any two numbers have opposite signs, say $x > 0$ and $y < 0$, then $x y < 0$, violating the second
+  necessity. If $x$ and $y$ have the same sign but $z$ has the opposite sign, then $(x + y)$ and $z$ will
+  have opposite signs, making their product $(x + y)z < 0$, violating the first necessity. Thus, equality
+  cannot hold if there is any sign mismatch among the non-zero variables.
+
+  Therefore, equality holds if and only if $x$, $y$, and $z$ all have the same sign.
+//88
++ For all real numbers $x$ and $y$, $max(x, y) = (x + y + |y - x|)/2$ and $min(x, y) = (x + y - |y - x|)/2$.
+
+  Proof for $max(x, y)$:
+
+  We can prove this formula by analyzing the two possible orderings of the real numbers $x$ and $y$:
+
+  *Case 1:* Suppose $x >= y$. By definition, if $x >= y$, then $max(x, y) = x$. Let us check the right side
+  of the proposed identity. Since $x >= y$, the difference $x - y >= 0$, which means $y - x  0$. The
+  absolute value of a positive number is the number itself $|y - x| = y - x$
+
+  Substituting this into the formula gives $(x + y + (y - x)) / 2 = (2 y) / 2 = y$ Both sides equal $y$, so
+  the formula holds for this case.
+
+  Thus, $max(x, y) = (x + y + |y - x|)/2$ is proven for all real numbers.
+
+  Proof for $min(x, y)$:
+
+  We evaluate the formula using the same two ordering cases:
+
+  *Case 1:* Suppose $x >= y$. By definition, if $x >= y$, then $min(x, y) = y$. Using our evaluation from
+  before, $|y - x| = x - y$. Substituting this into the minimum formula gives: $(x + y - (x - y)) / 2 = (x +
+  y - x + y) / 2 = (2 y) / 2 = y$. Both sides equal $y$, so the formula holds.
+
+  *Case 2:* Suppose $x < y$. By definition, if $x < y$, then $min(x, y) = x$. Using our evaluation from
+  before, $|y - x| = y - x$. Substituting this into the minimum formula gives $(x + y - (y - x)) / 2 = (x + y
+  - y + x) / 2 = (2 x) / 2 = x$. Both sides equal $x$, so the formula holds.
+
+  Thus, $min(x, y) = (x + y - |y - x|)/2$ is proven for all real numbers.
+
+  Derivation of Formulas for Three Variables:
+
+  We can find an explicit formula for $max(x, y, z)$ by using the associative property $max(x, y, z) =
+  max(x, max(y, z))$.
+
+  1. First, we write out the inner term $max(y, z)$ using our two-variable formula $max(y, z) = (y + z + |z
+     - y|)/2$
+
+  2. Next, we substitute this entire expression into our two-variable formula for $max(x, text("...") )$:
+     $max(x, max(y, z)) = (x + max(y, z) + |max(y, z) - x|)/2$
+
+  3. Expanding the terms inside the numerator yields $max(x, y, z) = (x + (y + z + |z - y|)/2 + lr(|(y + z + |z
+     - y|)/2 - x|))/2$
+
+  4. Multiplying the numerator and denominator by $2$ to clear the internal fractions gives the final
+     formula for the maximum $max(x, y, z) = (2 x + y + z + |z - y| + |y + z + |z - y| - 2 x|)/4$
+
+  We can derive the formula for $min(x, y, z)$ in an identical manner by using the property $min(x, y, z) =
+  min(x, min(y, z))$:
+
+  1. First, expand the inner term $min(y, z) = (y + z - |z - y|)/2$
+
+  2. Substitute this expression into the two-variable minimum formula $min(x, min(y, z)) = (x + min(y, z) -
+     |min(y, z) - x|)/2$
+
+  3. Expanding the terms inside the numerator yields: $min(x, y, z) = (x + (y + z - |z - y|)/2 - lr(|(y + z -
+     |z - y|)/2 - x|))/2$
+
+  4. Clearing the internal fractions gives the final formula for the minimum $min(x, y, z) = (2 x + y + z -
+     |z - y| - |y + z - |z - y| - 2 x|)/4$
+//89
++ We can prove this identity by analyzing the cases for the sign of the real number $a$:
+
+  *Case 1:* Suppose $a >= 0$. If $a$ is non-negative, then by definition, its absolute value is the number
+   itself $|a| = a$
+
+  Now let us look at the right side of our identity, $|-a|$. Since $a >= 0$, multiplying by $-1$ gives $-a
+  <= 0$, meaning $-a$ is non-positive. By the definition of absolute value, the absolute value of a
+  non-positive expression is its negation $|-a| = -(-a) = a$
+
+  Since both sides equal $a$, the statement holds true for $a >= 0$.
+
+  *Case 2:* Suppose $a  0$, meaning $-a$ is strictly positive. The absolute value of a positive expression
+   is the expression itself $|-a| = -a$
+
+  Since both sides equal $-a$, the statement holds true for $a < 0$.
+//91
++ An "if and only if" statement requires us to prove the implication in both directions.
+
+  Direction 1: Prove that if $|a| <= b$, then $-b <= a <= b$.
+
+  We are given that $|a| <= b$. Since the absolute value of any real number is always non-negative ($|a| >=
+  0$), it immediately follows that $b >= 0$
+
+  Now, we evaluate the value of $a$ by splitting it into two possible cases based on its sign:
+
+  Case 1.1: Suppose $a >= 0$. If $a$ is non-negative, then by definition, $|a| = a$. Substituting this into
+  our given inequality $|a| <= b$ yields $a <= b$.
+
+  Since $b >= 0$ and $a >= 0$, multiplying the inequality $b >= 0$ by $-1$ gives $-b <= 0$. Combining this
+  with $a >= 0$ yields $-b <= 0 <= a$, which means $-b <= a$. Putting the inequalities together, we get $-b
+  <= a <= b$
+
+  Case 1.2: Suppose $a < 0$. If $a$ is strictly negative, then by definition, $|a| = -a$. Substituting this
+  into our given inequality $|a| <= b$ yields $-a <= b$.
+
+  Multiplying both sides of this inequality by $-1$ reverses the direction of the inequality sign $a >= -b$.
+
+  Which can be written as $-b <= a$. Since $a < 0$ and we established $b >= 0$, it is clear that $a < 0 <=
+  b$, which means $a <= b$. Putting the inequalities together, we get $-b <= a <= b$.
+
+  In both cases, the compound inequality $-b <= a <= b$ holds true.
+
+  Direction 2: Prove that if $-b <= a <= b$, then $|a| <= b$.
+
+  We are given the compound inequality $-b <= a <= b$, which provides two pieces of information:
+
+  1. $a <= b$
+  2. $-b <= a$, which can be rewritten by multiplying both sides by $-1$ as $-a <= b$.
+
+  We evaluate the expression $|a|$ based on the sign of $a$:
+
+  Case 2.1: Suppose $a >= 0$. If $a$ is non-negative, then by definition, $|a| = a$. From our first given
+  relationship, we know that $a <= b$. Therefore, substituting $|a|$ for $a$ directly yields $|a| <= b$
+
+  Case 2.2: Suppose $a < 0$. If $a$ is strictly negative, then by definition, $|a| = -a$. From our second
+  given relationship, we know that $-a <= b$. Therefore, substituting $|a|$ for $-a$ directly yields $|a| <=
+  b$
+
+  In both cases, the inequality $|a| <= b$ holds true.
+
+  Since both directions have been proven, the equivalence is established.
+//91
++ According to the theorem proven in the previous problem, a compound inequality of the form $-c <= u <= c$
+  is logically equivalent to $|u| <= c$. We will use this property by setting $u = a + b$ and $c = |a| +
+  |b|$.
+
+  Therefore, to prove that $|a + b| <= |a| + |b|$, it is sufficient to prove the equivalent compound
+  inequality $-(|a| + |b|) <= a + b <= |a| + |b|$
+
+  Let us establish the upper and lower bounds for the individual variables $a$ and $b$ using the same
+  property from the previous problem (since $|a| <= |a|$ and $|b| <= |b|$ are trivially true):
+
+  1. For the variable $a$, we have $-|a| <= a <= |a|$
+
+  2. For the variable $b$, we have $-|b| <= b <= |b|$
+
+  Now, we can add these two compound inequalities together because their inequality signs all face the same
+  direction. Adding the lower bounds, middle terms, and upper bounds side-by-side yields $-|a| + (-|b|) <= a
+  + b <= |a| + |b|$
+
+  Factoring out a negative sign from the left side of the inequality chain gives $-(|a| + |b|) <= a + b <=
+  |a| + |b|$
+
+  We have successfully shown that the expression $a + b$ is bounded below by $-(|a| + |b|)$ and bounded
+  above by $|a| + |b|$.
+
+  By direct application of the property from the previous problem, this compound inequality implies that the
+  absolute value of the middle term is less than or equal to the upper bound $|a + b| <= |a| + |b|$
+//92
++ We want to show that $x^2 + x y + y^2 > 0$ when $(x, y) != (0, 0)$. We can break this down into two main
+  cases based on whether $x$ and $y$ are equal:
+
+  *Case 1.1:* Suppose $x = y$. Since $x$ and $y$ are both not $0$, we must have $x = y != 0$. Substituting
+  $y = x$ into our expression yields $x^2 + x(x) + x^2 = 3 x^2$. Since $x != 0$, its square is strictly
+  positive ($x^2 > 0$), so $3 x^2 > 0$.
+
+  *Case 1.2:* Suppose $x != y$. Using the difference of cubes factorization, we can rewrite the expression
+  as a rational fraction $x^2 + x y + y^2 = (x^3 - y^3) / (x - y)$
+
+  We evaluate the sign of this fraction by examining the order of $x$ and $y$:
+  - If $x > y$, then the denominator is positive ($x - y > 0$). Since the function $f(t) = t^3$ is strictly
+    increasing, $x > y$ implies $x^3 > y^3$, so the numerator is also positive ($x^3 - y^3 > 0$). A positive
+    number divided by a positive number is strictly positive.
+  - If $x < y$, then the denominator is negative ($x - y < 0$). Similarly, $x < y$ implies $x^3 < y^3$, so
+    the numerator is also negative ($x^3 - y^3 < 0$). A negative number divided by a negative number is
+    strictly positive.
+
+  Therefore, in all scenarios, $x^2 + x y + y^2 > 0$.
+
+  We want to show that $x^4 + x^3 y + x^2 y^2 + x y^3 + y^4 > 0$ when $(x, y) != (0, 0)$. We use the exact
+  same two case strategies:
+
+  *Case 2.1:* Suppose $x = y$. Since $x$ and $y$ are both not $0$, we must have $x = y != 0$. Substituting
+  $y = x$ into our expression yields $x^4 + x^3(x) + x^2(x^2) + x(x^3) + x^4 = 5 x^4$. Since $x != 0$, its
+  fourth power is strictly positive ($x^4 > 0$), so $5 x^4 > 0$.
+
+  *Case 2.2:* Suppose $x != y$. Using the algebraic identity for the difference of fifth powers, we can
+  rewrite the polynomial expression as: $x^4 + x^3 y + x^2 y^2 + x y^3 + y^4 = (x^5 - y^5) / (x - y)$
+
+  We evaluate the sign of this fraction by examining the order of $x$ and $y$:
+  - If $x > y$, then the denominator is positive ($x - y > 0$). Since the odd power function $f(t) = t^5$ is
+    strictly increasing, $x > y$ implies $x^5 > y^5$, making the numerator positive ($x^5 - y^5 > 0$). The
+    fraction evaluates to a strictly positive value.
+  - If $x < y$, then the denominator is negative ($x - y < 0$). Consequently, $x < y$ implies $x^5 < y^5$,
+    making the numerator negative ($x^5 - y^5 < 0$). The division of two negative quantities evaluates to a
+    strictly positive value.
+
+  *Aliter:* We want to show that $x^2 + x y + y^2 > 0$ when $(x, y) != (0, 0)$. We can rewrite the expression by
+  completing the square with respect to $x$: $x^2 + x y + y^2 = (x + y / 2)^2 + (3 / 4) y^2$
+
+  Since the square of any real number is non-negative, both $(x + y / 2)^2 >= 0$ and $(3 / 4) y^2 >= 0$. We
+  evaluate this sum under two possible cases for $y$:
+
+  *Case 1.1:* Suppose $y != 0$. If $y$ is non-zero, then its square is strictly positive, so $(3 / 4) y^2 >
+  0$. Adding the non-negative term $(x + y / 2)^2$ ensures the entire expression is strictly positive: $(x +
+  y / 2)^2 + (3 / 4) y^2 > 0$
+
+  *Case 1.2:* Suppose $y = 0$. Since $x$ and $y$ are both not $0$, if $y = 0$, then it must follow that $x
+  != 0$. Substituting $y = 0$ into our completed square yields $(x + 0)^2 + (3 / 4)(0)^2 = x^2$. Since $x !=
+  0$, its square is strictly positive ($x^2 > 0$).
+
+  Therefore, in all scenarios, $x^2 + x y + y^2 > 0$.
+
+  We want to show that $x^4 + x^3 y + x^2 y^2 + x y^3 + y^4 > 0$ when $(x, y) != (0, 0)$. In an elegant
+  fashion similar to the first part, we can rewrite this polynomial as a sum of squares $x^4 + x^3 y + x^2
+  y^2 + x y^3 + y^4 = (x^2 + 1 / 2 x y)^2 + 3 / 4 y^2 (x + 2 / 3 y)^2 + 2 / 3 y^4$
+
+  Let us expand these terms to verify the identity:
+  1. $(x^2 + 1 / 2 x y)^2 = x^4 + x^3 y + 1 / 4 x^2 y^2$
+  2. $3 / 4 y^2 (x + 2 / 3 y)^2 = 3 / 4 y^2 (x^2 + 4 / 3 x y + 4 / 9 y^2) = 3 / 4 x^2 y^2 + x y^3 + 1 / 3
+     y^4$
+  3. $2 / 3 y^4$
+
+  Summing these individual components together gives $x^4 + x^3 y + (1 / 4 + 3 / 4) x^2 y^2 + x y^3 + (1 / 3
+  + 2 / 3) y^4 = x^4 + x^3 y + x^2 y^2 + x y^3 + y^4$
+
+  Since every individual component in our rewritten sum is a square or an even power multiplied by a
+  positive coefficient, each part is guaranteed to be non-negative. We can evaluate this expression under
+  two cases
+
+  *Case 2.1:* Suppose $y != 0$. If $y$ is non-zero, then the third term $2 / 3 y^4$ is strictly positive ($2
+   / 3 y^4 > 0$). Since the first two terms are non-negative, adding a strictly positive term ensures that
+   the entire sum is strictly positive.
+
+  *Case 2.2:* Suppose $y = 0$. Since both variables cannot be $0$ simultaneously, if $y = 0$, then $x !=
+  0$. Substituting $y = 0$ into our sum of squares components leaves only the first term active $(x^2 + 0)^2
+  + 0 + 0 = x^4$. Since $x != 0$, its fourth power is strictly positive ($x^4 > 0$).
+
+  Therefore, in all scenarios, $x^4 + x^3 y + x^2 y^2 + x y^3 + y^4 > 0$.
+//93
++ We begin with the given equation $(x + y)^2 = x^2 + y^2$
+
+  Expanding the left side using the perfect square trinomial identity gives $x^2 + 2 x y + y^2 = x^2 + y^2$
+
+  Subtracting $x^2 + y^2$ from both sides of the equation simplifies it to $2 x y = 0$
+
+  Dividing both sides by the positive constant $2$ yields $x y = 0$
+
+  According to the zero-product property, the product of two real numbers is zero if and only if at least
+  one of the numbers is zero. Therefore $x = 0$ or $y = 0$.
+
+  We begin with the given equation $(x + y)^3 = x^3 + y^3$
+
+  Expanding the left side using the binomial cube identity gives $x^3 + 3 x^2 y + 3 x y^2 + y^3 = x^3 + y^3$
+
+  Subtracting $x^3 + y^3$ from both sides of the equation simplifies it to $3 x^2 y + 3 x y^2 = 0$
+
+  We can factor out the common term $3 x y$ from both terms on the left side $3 x y (x + y) = 0$
+
+  Dividing both sides by the positive constant $3$ yields $x y (x + y) = 0$
+
+  According to the zero-product property, for a product of multiple factors to be equal to zero, at least
+  one of the individual factors must equal zero. This provides three separate possibilities
+  1. $x = 0$
+  2. $y = 0$
+  3. $x + y = 0$, which can be rewritten as $x = -y$
+
+  Combining these possibilities, the equation holds true if and only if $x = 0$ or $y = 0$ or $x = -y$.
+//94
++ We are given the fact that $x^2 + 2 x y + y^2 = (x + y)^2 >= 0$. We can rewrite our target expression $4
+  x^2 + 6 x y + 4 y^2$ to group a multiple of this perfect square expression: $4 x^2 + 6 x y + 4 y^2 = 3
+  (x^2 + 2 x y + y^2) + x^2 + y^2$
+
+  Substituting the perfect square identity into the expression yields $3 (x + y)^2 + x^2 + y^2$
+
+  Let us analyze the signs of the components in this rewritten expression:
+  1. The first term $3 (x + y)^2$ is a positive constant multiplied by a square, so it is always
+     non-negative ($3 (x + y)^2 >= 0$).
+  2. The remaining terms $x^2$ and $y^2$ are individual squares of real numbers, meaning $x^2 >= 0$ and $y^2
+     >= 0$.
+
+  Since the entire expression is a sum of non-negative terms, the total value can only be equal to zero if
+  every individual term is simultaneously equal to zero:
+  1. $3 (x + y)^2 = 0 => x + y = 0$
+  2. $x^2 = 0 => x = 0$
+  3. $y^2 = 0 => y = 0$
+
+  If $x$ and $y$ are both not $0$, then at least one of the squares $x^2$ or $y^2$ must be strictly greater
+  than zero ($x^2 > 0$ or $y^2 > 0$). Adding a strictly positive term to the non-negative components ensures
+  that the entire sum is strictly positive $3 (x + y)^2 + x^2 + y^2 > 0$
+
+  Therefore, $4 x^2 + 6 x y + 4 y^2 > 0$ holds true unless $x$ and $y$ are both $0$.
+//95
++ We begin with the given equation $(x + y)^4 = x^4 + y^4$
+
+  Expanding the left side using the binomial expansion formula for a fourth power gives $x^4 + 4 x^3 y + 6
+  x^2 y^2 + 4 x y^3 + y^4 = x^4 + y^4$
+
+  Subtracting $x^4 + y^4$ from both sides of the equation simplifies it to $4 x^3 y + 6 x^2 y^2 + 4 x y^3 =
+  0$
+
+  We can factor out the common term $x y$ from all three terms on the left side $x y (4 x^2 + 6 x y + 4 y^2)
+  = 0$
+
+  According to the zero-product property, this product can only equal zero if at least one of the main
+  factors equals zero. This leaves us with two possibilities:
+  1. $x y = 0$
+  2. $4 x^2 + 6 x y + 4 y^2 = 0$
+
+  Let us analyze these two possibilities:
+  - From the first factor, $x y = 0$ directly implies that $x = 0$ or $y = 0$.
+  - From the second factor, we have $4 x^2 + 6 x y + 4 y^2 = 0$. As proven in the previous problem, the
+    expression $4 x^2 + 6 x y + 4 y^2$ is strictly positive ($> 0$) for all real numbers unless $x$ and $y$
+    are both $0$. Therefore, the only solution generated by this second factor is $x = 0$ and $y = 0$.
+
+  Since the condition $x = 0$ and $y = 0$ is already covered by the broader statement $x = 0$ or $y = 0$,
+  the second factor provides no additional solutions.
+//96
++ We begin with the given equation $(x + y)^5 = x^5 + y^5$
+
+  Expanding the left side using the binomial theorem for a fifth power gives $x^5 + 5 x^4 y + 10 x^3 y^2 +
+  10 x^2 y^3 + 5 x y^4 + y^5 = x^5 + y^5$
+
+  Subtracting $x^5 + y^5$ from both sides of the equation simplifies it to $5 x^4 y + 10 x^3 y^2 + 10 x^2
+  y^3 + 5 x y^4 = 0$
+
+  We can factor out the common term $5 x y$ from all four remaining terms on the left side $5 x y (x^3 + 2
+  x^2 y + 2 x y^2 + y^3) = 0$
+
+  Next, let us factor the cubic expression inside the parentheses. We can group the terms by combining $x^3
+  + y^3$ and $2 x^2 y + 2 x y^2$: $x^3 + y^3 + 2 x^2 y + 2 x y^2 = 0$
+
+  Using the sum of cubes factorization on the first part and factoring out $2 x y$ from the second part
+  yields $(x + y)(x^2 - x y + y^2) + 2 x y (x + y) = 0$
+
+  Now, we can factor out the common binomial term $(x + y)$: $(x + y)(x^2 - x y + y^2 + 2 x y) = 0 => (x +
+  y)(x^2 + x y + y^2) = 0$
+
+  Substituting this back into our full factored equation gives $5 x y (x + y)(x^2 + x y + y^2) = 0$
+
+  According to the zero-product property, this equation is satisfied if and only if at least one of the
+  individual factors equals zero:
+  1. $x = 0$
+  2. $y = 0$
+  3. $x + y = 0 => x = -y$
+  4. $x^2 + x y + y^2 = 0$
+
+  As established in previous problems, the quadratic form $x^2 + x y + y^2$ is strictly positive ($> 0$) for
+  all real numbers unless $x = 0$ and $y = 0$. Therefore, this fourth factor provides no new solutions since
+  the origin $(0, 0)$ is already fully covered by the conditions $x = 0$ or $y = 0$.
+//97
++ First, we factor out the leading coefficient $2$ from the first two terms $2(x^2 - 3 / 2 x) + 4$
+
+  To complete the square inside the parentheses, we take half of the coefficient of $x$, which is $-3 / 4$,
+  and square it to get $9 / 16$. We add and subtract this value inside the expression $2(x^2 - 3 / 2 x + 9 /
+  16 - 9 / 16) + 4$
+
+  Now, we separate the perfect square trinomial and distribute the leading coefficient $2$ to the remaining
+  constant $2(x - 3 / 4)^2 - 2(9 / 16) + 4 => 2(x - 3 / 4)^2 - 9 / 8 + 4$
+
+  Converting $4$ to a fraction with a common denominator of $8$ gives $32 / 8$. Combining the constant terms
+  yields $2(x - 3 / 4)^2 - 9 / 8 + 32 / 8 => 2(x - 3 / 4)^2 + 23 / 8$
+
+  For any real number $x$, the squared term $(x - 3 / 4)^2$ is always non-negative $(x - 3 / 4)^2 >= 0$
+
+  Multiplying by the positive number $2$ preserves the inequality $2(x - 3 / 4)^2 >= 0$
+
+  Adding $23 / 8$ to both sides gives $2(x - 3 / 4)^2 + 23 / 8 >= 23 / 8$
+
+  Therefore, the smallest possible value of the expression is $23 / 8$.
+//98
++ To find the smallest possible value of the multi-variable quadratic expression, we can group the terms by
+  variable and complete the square for $x$ and $y$ independently. Because the leading coefficients for both
+  $x^2$ and $y^2$ are positive ($1 > 0$ and $2 > 0$), the expression has a unique absolute minimum value at
+  its vertex point.
+
+  First, let us group the terms containing $x$ and the terms containing $y$: $(x^2 - 3 x) + (2 y^2 + 4 y) +
+  2$
+
+  For the $y$ terms, we factor out the leading coefficient $2$: $(x^2 - 3 x) + 2 (y^2 + 2 y) + 2$
+
+  Now, we complete the square for each grouped expression:
+  1. For the $x$ expression $x^2 - 3 x$, we take half of the coefficient of $x$, which is $-3 / 2$, and
+     square it to get $9 / 4$. We add and subtract $9 / 4$ inside the expression:
+     $x^2 - 3 x + 9 / 4 - 9 / 4 = (x - 3 / 2)^2 - 9 / 4$
+
+  2. For the $y$ expression inside the parentheses $y^2 + 2 y$, we take half of the coefficient of $y$,
+     which is $1$, and square it to get $1$. We add and subtract $1$ inside the parentheses:
+     $2 (y^2 + 2 y + 1 - 1) = 2 (y + 1)^2 - 2$
+
+  Substituting these completed square forms back into the full expression yields $(x - 3 / 2)^2 - 9 / 4 + 2
+  (y + 1)^2 - 2 + 2$
+
+  Simplifying the constant terms gives $(x - 3 / 2)^2 + 2 (y + 1)^2 - 9 / 4$
+
+  For all real numbers $x$ and $y$, the squared terms are always non-negative $(x - 3 / 2)^2 >= 0$ and $2 (y
+  + 1)^2 >= 0$
+
+  Summing these inequalities together shows that $(x - 3 / 2)^2 + 2 (y + 1)^2 >= 0$
+
+  Subtracting $9 / 4$ from both sides gives the lower bound for the entire expression $(x - 3 / 2)^2 + 2 (y
+  + 1)^2 - 9 / 4 >= -9 / 4$
+
+  The expression reaches its absolute minimum value when both independent squared terms are simultaneously
+  equal to zero. This occurs exactly when $x = 3 / 2$ and $y = -1$. At this specific coordinate, the minimal
+  value is the remaining constant term.
+
+  Therefore, the smallest possible value of the expression is $-9 / 4$.
+//99
++ To find the smallest possible value of this multi-variable quadratic expression containing a cross term $4
+  x y$, we can complete the square by first grouping the terms involving $x$.
+
+  Let us group the expression as a quadratic in terms of $x$: $x^2 + (4 y - 4) x + (5 y^2 - 6 y + 7)$
+
+  To complete the square for the $x$ terms, we take half of the coefficient of $x$, which is $(4 y - 4) / 2
+  = 2 y - 2$, and square it $(2 y - 2)^2 = 4 y^2 - 8 y + 4$
+
+  We add and subtract this squared expression inside our equation $(x^2 + (4 y - 4) x + (4 y^2 - 8 y + 4)) -
+  (4 y^2 - 8 y + 4) + 5 y^2 - 6 y + 7$
+
+  We can rewrite the first grouped part as a perfect square trinomial $(x + (2 y - 2))^2 - 4 y^2 + 8 y - 4 +
+  5 y^2 - 6 y + 7$
+
+  Combining the remaining like terms outside the parentheses gives $(x + 2 y - 2)^2 + y^2 + 2 y + 3$
+
+  Now, we complete the square for the remaining expression in terms of $y$. For $y^2 + 2 y$, we add and
+  subtract $1$: $y^2 + 2 y + 1 - 1 + 3 = (y + 1)^2 + 2$
+
+  Substituting this back into the full expression yields the final form as a sum of squares plus a constant
+  $(x + 2 y - 2)^2 + (y + 1)^2 + 2$
+
+  For all real numbers $x$ and $y$, the squared terms are always non-negative: $(x + 2 y - 2)^2 >= 0$ and
+  $(y + 1)^2 >= 0$
+
+  Summing these inequalities together shows that $(x + 2 y - 2)^2 + (y + 1)^2 >= 0$
+
+  Adding $2$ to both sides gives the lower bound for the entire expression $(x + 2 y - 2)^2 + (y + 1)^2 + 2 >= 2$
+
+  The expression reaches its absolute minimum value when both independent squared terms are simultaneously
+  equal to zero. This requires:
+  1. $y + 1 = 0 => y = -1$
+  2. $x + 2 y - 2 = 0 => x + 2(-1) - 2 = 0 => x - 4 = 0 => x = 4$
+
+  At the coordinate point $(4, -1)$, both squares disappear, leaving the absolute minimum value.
+
+  Therefore, the smallest possible value of the expression is $2$.
+//100
++ We can prove this by directly substituting the two expressions into the left side of the equation $x^2 + b
+  x + c$ and verifying that it evaluates to zero. Let the given numbers be $x_1$ and $x_2$.
+
+  *Substitution of $x_1$:*
+
+  Let $x = (-b + sqrt(b^2 - 4 c))/2$. Substituting this into $x^2 + b x + c$ gives: $((-b + sqrt(b^2 - 4
+  c))/2)^2 + b((-b + sqrt(b^2 - 4 c))/2) + c$
+
+  Let us evaluate each term separately:
+  1. For the first term, squaring the numerator and denominator yields:
+     $((-b + sqrt(b^2 - 4 c))^2)/4 = (b^2 - 2 b sqrt(b^2 - 4 c) + (b^2 - 4 c))/4 = (2 b^2 - 4 c - 2 b
+     sqrt(b^2 - 4 c))/4 = (b^2 - 2 c - b sqrt(b^2 - 4 c))/2$
+
+  2. For the second term, distributing $b$ across the numerator yields $(-b^2 + b sqrt(b^2 - 4 c))/2$
+
+  Now, we combine the first term, the second term, and $c$ over a common denominator of $2$: $(b^2 - 2 c - b
+  sqrt(b^2 - 4 c))/2 + (-b^2 + b sqrt(b^2 - 4 c))/2 + (2 c)/2$
+
+  Summing the numerators together over the single denominator gives $(b^2 - 2 c - b sqrt(b^2 - 4 c) - b^2 +
+  b sqrt(b^2 - 4 c) + 2 c)/2$
+
+  Grouping like terms in the numerator shows that everything cancels out $((b^2 - b^2) + (2 c - 2 c) + (-b
+  sqrt(b^2 - 4 c) + b sqrt(b^2 - 4 c)))/2 = 0 / 2 = 0$
+
+  Thus, $x_1$ satisfies the equation.
+
+  *Substitution of $x_2$:*
+
+  Let $x = (-b - sqrt(b^2 - 4 c))/2$. Substituting this into $x^2 + b x + c$ gives $((-b - sqrt(b^2 - 4
+  c))/2)^2 + b((-b - sqrt(b^2 - 4 c))/2) + c$
+
+  Let us evaluate each term separately:
+  1. For the first term, squaring the numerator and denominator yields $((-b - sqrt(b^2 - 4 c))^2)/4 = (b^2
+     + 2 b sqrt(b^2 - 4 c) + (b^2 - 4 c))/4 = (2 b^2 - 4 c + 2 b sqrt(b^2 - 4 c))/4 = (b^2 - 2 c + b sqrt(b^2 -
+     4 c))/2$
+
+  2. For the second term, distributing $b$ across the numerator yields $(-b^2 - b sqrt(b^2 - 4 c))/2$
+
+  Now, we combine the first term, the second term, and $c$ over a common denominator of $2$: $(b^2 - 2 c + b
+  sqrt(b^2 - 4 c))/2 + (-b^2 - b sqrt(b^2 - 4 c))/2 + (2 c)/2$
+
+  Summing the numerators together over the single denominator gives $(b^2 - 2 c + b sqrt(b^2 - 4 c) - b^2 -
+  b sqrt(b^2 - 4 c) + 2 c)/2$
+
+  Grouping like terms in the numerator shows that everything cancels out $((b^2 - b^2) + (2 c - 2 c) + (b
+  sqrt(b^2 - 4 c) - b sqrt(b^2 - 4 c)))/2 = 0 / 2 = 0$
+
+  Thus, $x_2$ also satisfies the equation.
+//101
++ We are given that the discriminant is strictly negative, meaning $b^2 - 4 c < 0$. We can rewrite this
+  inequality by adding $4 c$ to both sides and dividing by $4$, which yields $c > b^2 / 4$
+
+  Now, let us analyze the quadratic expression $x^2 + b x + c$ by completing the square with respect to $x$.
+
+  To complete the square for $x^2 + b x$, we take half of the coefficient of $x$, which is $b / 2$, and
+  square it to get $b^2 / 4$. We add and subtract this value inside the expression $x^2 + b x + b^2 / 4 -
+  b^2 / 4 + c$
+
+  We can rewrite the first three terms as a perfect square trinomial $(x + b / 2)^2 + c - b^2 / 4$
+
+  Let us analyze the two separate parts of this rewritten expression:
+  1. For any real number $x$, the squared term $(x + b / 2)^2$ is always non-negative $(x + b / 2)^2 >= 0$
+
+  2. For the constant remainder term $c - b^2 / 4$, we can use our initial condition $c > b^2 /
+     4$. Subtracting $b^2 / 4$ from both sides of this inequality shows that the remainder is strictly
+     positive $c - b^2 / 4 > 0$
+
+  When we add a strictly positive real number to a non-negative real number, the resulting sum is guaranteed
+  to be strictly positive. Therefore, for all real numbers $x$: $(x + b / 2)^2 + c - b^2 / 4 > 0$
+
+  Substituting back the original polynomial form gives $x^2 + b x + c > 0$
+
+  Since $x^2 + b x + c$ is strictly greater than zero for every real number $x$, it can never equal
+  zero. Consequently, there are no real numbers $x$ that satisfy the equation $x^2 + b x + c = 0$.
+//102
++ We want to show that $x^2 + x y + y^2 > 0$ when $(x, y) != (0, 0)$. We can evaluate this by checking two
+  main cases based on whether $y$ is equal to $0$:
+
+  *Case 1:* Suppose $y = 0$. Since $x$ and $y$ are both not $0$, if $y = 0$, then it must follow that $x !=
+  0$. Substituting $y = 0$ into our expression yields $x^2 + x(0) + 0^2 = x^2$
+
+  Since $x != 0$, its square is strictly positive ($x^2 > 0$), satisfying the theorem.
+
+  *Case 2:* Suppose $y != 0$. Since $y$ is non-zero, we can factor out $y^2$ from the entire expression $x^2
+   + x y + y^2 = y^2 (x^2 / y^2 + x / y + 1)$
+
+  Let $u = x / y$. Substituting this variable into the expression inside the parentheses gives the quadratic
+  form $u^2 + u + 1$
+
+  This expression fits the general quadratic form $u^2 + b u + c$, where $b = 1$ and $c = 1$. Let us
+  calculate the discriminant $b^2 - 4 c$ for this quadratic $b^2 - 4 c = 1^2 - 4(1)(1) = 1 - 4 = -3$
+
+  Since the discriminant is strictly negative ($-3 < 0$), we can directly apply the theorem proven in the
+  previous problem. The previous problem established that if $b^2 - 4 c < 0$, then the quadratic expression
+  is strictly positive for all real values of the variable. Therefore $u^2 + u + 1 > 0$ for all real numbers
+  $u$
+
+  Substituting $u = x / y$ back into the inequality gives $x^2 / y^2 + x / y + 1 > 0$
+
+  Since $y != 0$, its square is strictly positive ($y^2 > 0$). Multiplying a strict inequality by a strictly
+  positive number preserves the direction of the inequality sign. Multiplying both sides by $y^2$ yields
+  $y^2 (x^2 / y^2 + x / y + 1) > y^2 (0) => x^2 + x y + y^2 > 0$
+
+  In both possible cases, the expression is strictly positive.
+//103
++ We want to find all real numbers $alpha$ such that the quadratic form $x^2 + alpha x y + y^2 > 0$ for all
+  $(x, y) != (0, 0)$. We can evaluate this by checking two main cases based on whether $y$ is equal to $0$:
+
+  *Case 1:* Suppose $y = 0$. If $y = 0$, then since $x$ and $y$ are both not $0$, we must have $x !=
+  0$. Substituting $y = 0$ into the inequality yields $x^2 + alpha x(0) + 0^2 = x^2$
+
+  Since $x != 0$, its square is strictly positive ($x^2 > 0$). This holds true regardless of the value of
+  $alpha$.
+
+  *Case 2:* Suppose $y != 0$. Since $y$ is non-zero, its square is strictly positive ($y^2 > 0$). We can
+   factor out $y^2$ from the entire expression $x^2 + alpha x y + y^2 = y^2 (x^2 / y^2 + alpha x / y + 1)$
+
+  Let $u = x / y$. Substituting this variable into the expression inside the parentheses gives the quadratic
+  polynomial $u^2 + alpha u + 1$
+
+  For the original expression to be strictly positive for all non-zero pairs, this quadratic polynomial must
+  be strictly positive ($> 0$) for all real numbers $u$.
+
+  Using the theorem from the previous discriminant problems, a quadratic polynomial of the form $A u^2 + B u
+  + C$ with a positive leading coefficient ($A = 1 > 0$) is strictly positive for all real inputs if and
+  only if its discriminant $Delta = B^2 - 4 A C$ is strictly negative $Delta = alpha^2 - 4(1)(1) < 0 =>
+  alpha^2 - 4 < 0 => alpha^2 < 4$
+
+  Taking the square root of both sides using absolute values yields $|alpha| < 2$
+
+  Which can be written as the open interval $-2 < alpha < 2$.
+//104
++ To find the smallest possible value for each quadratic expression, we complete the square. Since the
+  leading coefficients ($1$ and $a$) are positive, both parabolas open upwards, meaning their vertices
+  represent their absolute minimum values.
+
+  We begin by taking half of the linear coefficient, which is $b / 2$, squaring it to get $b^2 / 4$, and
+  then adding and subtracting this value inside the expression $x^2 + b x + b^2 / 4 - b^2 / 4 + c$
+
+  Grouping the first three terms into a perfect square trinomial yields $(x + b / 2)^2 + c - b^2 / 4$
+
+  For any real number $x$, the squared term $(x + b / 2)^2$ is always non-negative $(x + b / 2)^2 >= 0$
+
+  Adding the constant remainder to both sides gives the lower bound for the entire expression $(x + b / 2)^2
+  + c - b^2 / 4 >= c - b^2 / 4$
+
+  The expression achieves its absolute minimum when the squared term is exactly zero, which occurs at $x =
+  -b / 2$. At this point, the remaining constant value is $c - b^2 / 4$
+
+  First, we factor out the leading coefficient $a$ from the terms containing the variable $x$:
+  $a (x^2 + b / a x) + c$
+
+  To complete the square inside the parentheses, we take half of the coefficient of $x$, which is $b / (2
+  a)$, square it to get $b^2 / (4 a^2)$, and then add and subtract this value $a (x^2 + b / a x + b^2 / (4
+  a^2) - b^2 / (4 a^2)) + c$
+
+  We separate the perfect square trinomial and distribute $a$ to the remaining negative fraction $a (x + b /
+  (2 a))^2 - a (b^2 / (4 a^2)) + c => a (x + b / (2 a))^2 - b^2 / (4 a) + c$
+
+  Rearranging the constant terms gives the standard vertex form $a (x + b / (2 a))^2 + c - b^2 / (4 a)$
+
+  Since $a > 0$ and the squared term is always non-negative, the entire grouped term is non-negative $a (x +
+  b / (2 a))^2 >= 0$
+
+  Adding the constant remainder to both sides gives the lower bound for the full expression $a (x + b / (2
+  a))^2 + c - b^2 / (4 a) >= c - b^2 / (4 a)$
+
+  The expression reaches its absolute minimum when the squared term equals zero, which occurs at $x = -b /
+  (2 a)$. At this vertex point, the minimal value is the remaining constant term.
+//105
++ We will evaluate the inequality by breaking the proof into three parts as outlined in the problem
+  statement.
+
+  *Part 1:* Prove equality holds if $x_1 = lambda y_1$ and $x_2 = lambda y_2$ for some $lambda >= 0$.
+
+  Suppose there exists a non-negative number $lambda$ such that $x_1 = lambda y_1$ and $x_2 = lambda
+  y_2$. Let us substitute these expressions into both sides of the Schwarz inequality:
+
+ *Left side:* $(x_1 y_1 + x_2 y_2)^2 = (lambda y_1^2 + lambda y_2^2)^2 = (lambda (y_1^2 + y_2^2))^2 =
+  lambda^2 (y_1^2 + y_2^2)^2$
+
+  *Right side:* $(x_1^2 + x_2^2)(y_1^2 + y_2^2) = ((lambda y_1)^2 + (lambda y_2)^2)(y_1^2 + y_2^2) =
+   (lambda^2 y_1^2 + lambda^2 y_2^2)(y_1^2 + y_2^2) = lambda^2 (y_1^2 + y_2^2)(y_1^2 + y_2^2) = lambda^2
+   (y_1^2 + y_2^2)^2$
+
+  Since both sides simplify to the exact same expression, equality holds true.
+
+  *Part 2:* Prove equality holds if $y_1 = y_2 = 0$.
+
+  Suppose that $y_1 = 0$ and $y_2 = 0$. Substituting these values directly into both sides yields:
+
+  *Left side:* $(x_1(0) + x_2(0))^2 = 0^2 = 0$
+
+  *Right side:* $(x_1^2 + x_2^2)(0^2 + 0^2) = (x_1^2 + x_2^2)(0) = 0$
+
+  Since both sides evaluate to $0$, equality holds true.
+
+  *Part 3:* Complete the proof when there is no such $lambda$.
+
+  Now suppose that $y_1$ and $y_2$ are not both $0$, and that there is no real number $lambda$ such that
+  $x_1 = lambda y_1$ and $x_2 = lambda y_2$.
+
+  Because no such $lambda$ exists, the quantities $(lambda y_1 - x_1)$ and $(lambda y_2 - x_2)$ cannot be
+  simultaneously zero for any choice of $lambda$. Since the sum of squares of real numbers is strictly
+  positive unless all terms are zero, we have the strict inequality for all real numbers $lambda$:
+  $0 < (lambda y_1 - x_1)^2 + (lambda y_2 - x_2)^2$
+
+  Expanding both squares on the right side yields:
+  $0 < (lambda^2 y_1^2 - 2 lambda x_1 y_1 + x_1^2) + (lambda^2 y_2^2 - 2 lambda x_2 y_2 + x_2^2)$
+
+  Grouping by powers of $lambda$ gives the quadratic polynomial in terms of $lambda$:
+  $(y_1^2 + y_2^2) lambda^2 - 2 (x_1 y_1 + x_2 y_2) lambda + (x_1^2 + x_2^2) > 0$
+
+  This expression fits the general quadratic form $A lambda^2 + B lambda + C > 0$, where:
+  - $A = y_1^2 + y_2^2$
+  - $B = -2 (x_1 y_1 + x_2 y_2)$
+  - $C = x_1^2 + x_2^2$
+
+  Since $y_1$ and $y_2$ are not both $0$, the leading coefficient is strictly positive ($A > 0$). From our
+  previous problems, we proved that a quadratic polynomial $A lambda^2 + B lambda + C$ is strictly positive
+  for all real inputs if and only if its discriminant $Delta = B^2 - 4 A C$ is strictly negative ($Delta <
+  0$).
+
+  Let us compute and bound the discriminant $B^2 - 4 A C < 0 => (-2(x_1 y_1 + x_2 y_2))^2 - 4(y_1^2 +
+  y_2^2)(x_1^2 + x_2^2) < 0 => 4(x_1 y_1 + x_2 y_2)^2 - 4(y_1^2 + y_2^2)(x_1^2 + x_2^2) < 0$
+
+  Dividing the entire inequality by the positive constant $4$ yields $(x_1 y_1 + x_2 y_2)^2 - (y_1^2 +
+  y_2^2)(x_1^2 + x_2^2) < 0$
+
+  Adding $(y_1^2 + y_2^2)(x_1^2 + x_2^2)$ to both sides gives the strict Schwarz inequality $(x_1 y_1 + x_2
+  y_2)^2 < (x_1^2 + x_2^2)(y_1^2 + y_2^2)$
+
+  Combining the strict inequality from Part 3 with the equality cases from Part 1 and Part 2, we establish
+  that the inequality holds for all real inputs $(x_1 y_1 + x_2 y_2)^2 <= (x_1^2 + x_2^2)(y_1^2 + y_2^2)$.
+//106
++ Let us first consider the cases where either $x_1^2 + x_2^2 = 0$ or $y_1^2 + y_2^2 = 0$. If either sum of
+  squares is $0$, then the corresponding variables must be $0$ ($x_1 = x_2 = 0$ or $y_1 = y_2 = 0$). In this
+  scenario, both sides of the inequality evaluate to $0$, and the relation holds as an equality ($0 <= 0$).
+
+  Now, we assume that $x_1^2 + x_2^2 > 0$ and $y_1^2 + y_2^2 > 0$. We are given the basic algebraic
+  inequality $2 x y <= x^2 + y^2$
+
+  We apply this property by substituting the normalized variables. Let $x_i = (|x_i|)/ sqrt(x_1^2 + x_2^2)$
+  and $y_i = (|y_i|)/ sqrt(y_1^2 + y_2^2)$
+
+  *Step 1:* Apply the inequality for $i = 1$
+
+  Substituting these values into $2 x y <= x^2 + y^2$ for $i = 1$ yields $2 ((|x_1|)/ sqrt(x_1^2 + x_2^2) )
+  ((|y_1|)/ sqrt(y_1^2 + y_2^2) ) <= ((|x_1|)/ sqrt(x_1^2 + x_2^2) )^2 + ((|y_1|)/ sqrt(y_1^2 + y_2^2) )^2$
+
+  Simplifying the squared terms gives $(2 |x_1 y_1|) / (sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)) <= x_1^2 /
+  (x_1^2 + x_2^2) + y_1^2 / (y_1^2 + y_2^2)$
+
+  *Step 2:* Apply the inequality for $i = 2$
+
+  Similarly, substituting these values into $2 x y <= x^2 + y^2$ for $i = 2$ yields $2 ((|x_2|)/ sqrt(x_1^2
+  + x_2^2) ) ((|y_2|)/ sqrt(y_1^2 + y_2^2) ) <= ((|x_2|)/ sqrt(x_1^2 + x_2^2) )^2 + ((|y_2|)/ sqrt(y_1^2 +
+  y_2^2) )^2$
+
+  Simplifying the squared terms gives: $(2 |x_2 y_2|) / (sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)) <= x_2^2 /
+  (x_1^2 + x_2^2) + y_2^2 / (y_1^2 + y_2^2)$
+
+  *Step 3:* Add the two inequalities together
+
+  Since the inequality signs face the same direction, we can add the expressions side-by-side $(2 |x_1 y_1|
+  + 2 |x_2 y_2|) / (sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)) <= (x_1^2 + x_2^2) / (x_1^2 + x_2^2) + (y_1^2 +
+  y_2^2) / (y_1^2 + y_2^2)$
+
+  Simplifying the fractions on the right side yields $(2 ( |x_1 y_1| + |x_2 y_2| )) / (sqrt(x_1^2 + x_2^2)
+  sqrt(y_1^2 + y_2^2)) <= 1 + 1 => (2 ( |x_1 y_1| + |x_2 y_2| )) / (sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2))
+  <= 2$
+
+  Dividing both sides of the inequality by the positive constant $2$ gives $(|x_1 y_1| + |x_2 y_2|) /
+  (sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)) <= 1$
+
+  Multiplying both sides by the positive denominator preserves the inequality $|x_1 y_1| + |x_2 y_2| <=
+  sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)$
+
+  By the triangle inequality for absolute values, we know that $|x_1 y_1 + x_2 y_2| <= |x_1 y_1| + |x_2
+  y_2|$. Combining this with our result using the transitive property gives $|x_1 y_1 + x_2 y_2| <=
+  sqrt(x_1^2 + x_2^2) sqrt(y_1^2 + y_2^2)$
+
+  Squaring both sides of this inequality yields the standard form $(x_1 y_1 + x_2 y_2)^2 <= (x_1^2 +
+  x_2^2)(y_1^2 + y_2^2)$.
+//107
++ For all real numbers $x_1$, $x_2$, $y_1$, and $y_2$, the Schwarz inequality holds $(x_1 y_1 + x_2 y_2)^2 = 0$
+
+  Adding $(x_1 y_1 + x_2 y_2)^2$ to both sides of this inequality yields $(x_1 y_1 + x_2 y_2)^2 + (x_1 y_2 -
+  x_2 y_1)^2 >= (x_1 y_1 + x_2 y_2)^2$
+
+  Which can be written as $(x_1 y_1 + x_2 y_2)^2 <= (x_1 y_1 + x_2 y_2)^2 + (x_1 y_2 - x_2 y_1)^2$
+
+  By substituting the left side of Lagrange's identity from Step 1 into the right side of this inequality,
+  we obtain the final desired result $(x_1 y_1 + x_2 y_2)^2 <= (x_1^2 + x_2^2)(y_1^2 + y_2^2)$.
+//108
++ We can deduce the strict conditions for equality by analyzing the structures established in the previous
+  three proofs.
+
+  *Deduction 1:* From Lagrange's Identity. In the final proof, we established Lagrange's identity $(x_1^2 +
+   x_2^2)(y_1^2 + y_2^2) = (x_1 y_1 + x_2 y_2)^2 + (x_1 y_2 - x_2 y_1)^2$
+
+  For the Schwarz inequality to hold as a strict equality, the final term in Lagrange's identity must
+  vanish: $(x_1 y_2 - x_2 y_1)^2 = 0 => x_1 y_2 - x_2 y_1 = 0 => x_1 y_2 = x_2 y_1$
+
+  *Deduction 2:* From the Discriminant Method. In the first method, we evaluated the quadratic function in
+  terms of a variable $lambda$: $f(lambda) = (lambda y_1 - x_1)^2 + (lambda y_2 - x_2)^2 = (y_1^2 + y_2^2)
+  lambda^2 - 2 (x_1 y_1 + x_2 y_2) lambda + (x_1^2 + x_2^2)$
+
+  We showed that the discriminant $Delta$ of this quadratic satisfies $Delta = 0$ exactly when the Schwarz
+  inequality holds as an equality. A discriminant of zero means the quadratic equation $f(lambda) = 0$ has
+  exactly one real solution for $lambda$. For the sum of squares $f(lambda)$ to equal zero, both components
+  must disappear simultaneously:  $lambda y_1 - x_1 = 0 => x_1 = lambda y_1$ and $lambda y_2 - x_2 = 0 =>
+  x_2 = lambda y_2$
+
+  If $y_1$ and $y_2$ are not both $0$, this unique real root $lambda$ defines the exact proportional
+  relationship between the variables.
+
+  *Deduction 3:* Evaluating the Sign of $lambda$
+
+  From the normalization method, we utilized the inequality $2 u v <= u^2 + v^2$. This basic algebraic
+  property holds as a strict equality if and only if $u = v$. In our application, this required: $(|x_1|)/
+  sqrt(x_1^2 + x_2^2) = (|y_1|)/ sqrt(y_1^2 + y_2^2)$ and $(|x_2|)/ sqrt(x_1^2 + x_2^2) = (|y_2|)/sqrt(y_1^2
+  + y_2^2)$
+
+  This confirms that the magnitudes of the components must be directly proportional by a non-negative scalar
+  ratio, $lambda = sqrt(x_1^2 + x_2^2) / sqrt(y_1^2 + y_2^2) >= 0$. Furthermore, adding the absolute values
+  together matched the square of the sum ($|x_1 y_1 + x_2 y_2| = |x_1 y_1| + |x_2 y_2|$) if and only if $x_1
+  y_1$ and $x_2 y_2$ have the same sign configuration, matching the sign configuration dictated by a
+  positive multiplier $lambda >= 0$.
+
+  If $y_1 = y_2 = 0$, both sides trivially evaluate to zero, satisfying equality without requiring a scalar
+  relationship.

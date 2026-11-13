@@ -535,3 +535,77 @@ of a number.
 + Find all numbers $x$ for which $|x - 1| dot |x + 2| = 3$.
 //81
 + Prove that $|x y| = |x|dot|y|$.
+//82
++ Prove that $lr(|1/x|) = 1/(|x|)$, if $x != 0$.
+//83
++ Prove that $(|x|)/(|y|) = lr(|x/y|)$, if $y != 0$.
+//84
++ Prove that $|x - y| <= |x| + |y|$.
+//85
++ Prove that $|x| - |y| <= |x - y|$.
+//86
++ Prove that $|(|x| - |y|)| <= |x - y|$.
+//87
++ Prove that $|x + y + z| <= |x| + |y| + |z|$. Indicate when equality holds, and prove your statement.
+//88
++ The maximum of two numbers $x, y$ is denoted by $max(x, y)$. Thus, $max(-1, 3) = max(-3, 3) = 3$ and
+  $max(-1, -4) = max(-4, -1) = -1$. The minimum of $x$ and $y$ is denoted as $min(x, y)$. Prove that $max(x,
+  y) = (x + y + |y - x|)/2$ and $min(x, y) = (x + y - |y - x|)/2$. Derive a formula for $max(x, y, z)$ and
+  $min(x, y, z)$, using, for example, $max(x, y, z) = max(x, max(y, z))$.
+//89
++ Prove that $|a| = |-a|$.
+//90
++ Prove that $-b <= a <= b$ if and only if $|a| <= b$.
+//91
++ Use previous problem to give a new proof that $|a + b| <= |a| + |b|$.
+//92
++ Prove that if $x$ and $y$ are both not $0$, then $x^2 + x y + y^2 > 0$ and $x^4 + x^3y + x^2y^2 + x y^3 +
+  y^2 > 0$.
+//93
++ Show that $(x + y)^2 = x^2 + y^2$ only when $x = 0$ or $y = 0$ and $(x + y)^3 = x^3 + y^3$ only when $x =
+  0$ or $y = 0$ or $x = -y$.
+//94
++ Using the fact that $x^2 + 2x y + y^2 = (x + y)^2 >= 0$ show that $4x^2 + 6x y + 4y^2 > 0$ unless $x$ and
+  $y$ are both 0.
+//95
++ Using previous problem find out when $(x + y)^4 = x^4 + y^4$.
+//96
++ Find out when $(x + y)^5 = x^5 + y^5$.
+//97
++ Find the smallest possible value of $2x^2 - 3x + 4$.
+//98
++ Find the smallest possible value of $x^2 - 3x + 2y^2 + 4y + 2$.
+//99
++ Find the smallest possible value of $x^2 + 4x y + 5y^2 - 4x - 6y + 7$.
+//100
++ Suppose that $b^2 - 4c >= 0$. Show that the numbers $(-b + sqrt(b^2 - 4c))/2$ and $(-b - sqrt(b^2 -
+  4c))/2$ both satisfy the equation $x^2 + b x + c = 0$.
+//101
++ Suppose that $b^2 - 4c < 0$. Show that there are no numbers $x$ saatisfying $x^2 + b x + c = 0$; in fact,
+  $x^2 + b x + c > 0$ for all $x$.
+//102
++ Use previous problem to give another proof that if $x$ and $y$ are not both $0$, then $x^2 + x y + y^2 >
+  0$.
+//103
++ For which number $alpha$ is it true that $x^2 + alpha x y + y^2 > 0$ whenever $x$ and $y$ are not both
+  $0$?
+//104
++ Find the smallest possible value of $x^2 + b x + c$ and of $a x^2 + b x + c$, for $a > 0$.
+//105
++ One of the most fundamental inequalities is _Cauchy-Schwarz_ inequality which in its basic form is $x_1y_1
+  + x_2y_2 <= sqrt(x_1^2 + x_2^2)sqrt(y_1^2 + y_2^2)$.
+
+  Prove that if $x_1 = lambda y_1$ and $x_2 = lambda y_2$ for some number $lambda >= 0$, then equality
+  holds in the Schwarz inequality. Prove the same thing if $y_1 = y_2 = 0$. Now suppose that $y_1$ and $y_2$
+  are not both $0$, and that there is no number $lambda$ such that $x_1 = lambda y_1$ and $x_2 = lambda
+  y_2$. Then $0 < (lambda y_1 - x_1)^2 + (lambda y_2 - x_2)^2 = lambda^2(y_1^2 + y_2^2) - 2lambda(x_1y_1 +
+  x_2y_2) + (x_1^2 + x_2^2)$. Complete the proof of Schwarz inequality using previous problems.
+//106
++ Prove the Schwarz inequality by using $2x y <= x^2 + y^2$ with $x = (x_i)/sqrt(x_1^2 + x_2^2), y =
+  (y_i)/sqrt(y_1^2 + y_2^2)$ first for $i = 1$ and then for $i = 2$.
+//107
++ Prove the Schwarz inequality by first proving that $(x_1^2 + x_2^2)(y_1^2 + y_2^2) = (x_1y_1 + x_2y_2)^2 +
+  (x_1y_2 - x_2y_1)^2$.
+//108
++ Deduce from last three problems, that equality holds only when $y_1 = y_2 = 0$ or when there is a number
+  $lambda >= 0$ such that $x_1 = lambda y_1$ and $x_2 = lambda y_2$.

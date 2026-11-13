@@ -2,8 +2,8 @@
 #import "@preview/ctz-euclide:0.1.0": *
 #import "lib.typ": *
 
-//#set text(font: "XCharter")
-//#show math.equation: set text(font: "XCharter Math")
+//#set text(font: "TeX Gyre Pagella")
+//#show math.equation: set text(font: "TeX Gyre Pagella Math")
 //#show raw: set text(font: " Mono")
 #let mycolor = rgb(0, 96, 176);
 
@@ -86,6 +86,7 @@
 #part("Single Variable Calculus")
 
 #include "numbers.typ"
+#include "functions.typ"
 
 #part("Answers")
 #counter(heading).update(0)
